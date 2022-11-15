@@ -7,17 +7,15 @@
 
 Python nano tabs gang!!!
 
-File: .nanorc
+File: /etc/.nanorc
 
-##Convert tabs to space and set length to 4 spaces
+## Convert tabs to space and set length to 4 spaces
 - set tabstospaces
 - set tabsize 4
 
-##Use smooth scrolling of text
-- set smooth
-
-##Tab next line of code after hitting return key
+## Tab next line of code after hitting return key
 - set autoindent
 
+## Syntax coloring: For all details, see 'man nanorc', section SYNTAX HIGHLIGHTING.
 - include ~/.nano/syntax/python.nanorc
-- include ~/.nano/syntax/ALL.nanorc
+- include "/usr/share/nano/*.nanorc"
