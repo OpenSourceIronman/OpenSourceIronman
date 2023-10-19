@@ -1,0 +1,51 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "idf.espIdfPath": "/Users/mars/esp/esp-idf",
+    "idf.pythonBinPath": "/Users/mars/.espressif/python_env/idf4.3_py3.8_env/bin/python",
+    "idf.toolsPath": "/Users/mars/.espressif",
+    "idf.customExtraPaths": "/Users/mars/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin:/Users/mars/.espressif/tools/xtensa-esp32s2-elf/esp-2020r3-8.4.0/xtensa-esp32s2-elf/bin:/Users/mars/.espressif/tools/xtensa-esp32s3-elf/esp-2020r3-8.4.0/xtensa-esp32s3-elf/bin:/Users/mars/.espressif/tools/riscv32-esp-elf/1.24.0.123_64eb9ff-8.4.0/riscv32-esp-elf/bin:/Users/mars/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/Users/mars/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:/Users/mars/.espressif/tools/openocd-esp32/v0.10.0-esp32-20210401/openocd-esp32/bin",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/Users/mars/.espressif/tools/openocd-esp32/v0.10.0-esp32-20210401/openocd-esp32/share/openocd/scripts"
+    },
+    "idf.gitPath": "git",
+    "editor.inlineSuggest.enabled": true,
+    "idf.port": "/dev/cu.usbserial-020911PT",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.associations": {
+        "*.cps": "javascript"
+    },
+    "[python]": {
+
+        "editor.autoClosingBrackets": "always",
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnType": true
+    },
+
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": ["--max-line-length=135"],
+
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "none"
+    },
+    "git.enableSmartCommit": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": false
+    },
+    "git.confirmSync": false,
+    "workbench.editorAssociations": {
+        "*.db": "default"
+    },
+    "pylint.args": [
+        " \"--max-line-length=150\""
+    ],
+    "workbench.startupEditor": "none",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.size": "fill",
+    "editor.minimap.enabled": false,
+    "python.defaultInterpreterPath": "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+    "rapidapi.terminalLink.enabled": false
+}
+// /Users/venus/Library/Application Support/Code/User/settings.json
