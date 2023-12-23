@@ -1,3 +1,4 @@
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -84,11 +85,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR='nano'
+else
+    export EDITOR='nano'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -106,4 +107,19 @@ alias clr="clear"
 alias gits="git status"
 alias gita="git add *"
 alias gitc="git commit -m"
+alias nano="/opt/homebrew/bin/nano"
+alias themes="cd /Users/venus/.oh-my-zsh/themes"
+alias cmatrix="cmatrix -b -s"
 
+#/usr/bin/nano /opt/homebrew/share/man/man1/nano.1
+
+
+# Herd injected PHP binary.
+export PATH="/Users/venus/Library/Application Support/Herd/bin/":$PATH
+
+# Mojo (Python) SDK
+export MODULAR_HOME="$HOME/.modular"
+export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/venus/Library/Application Support/Herd/config/php/82/"
