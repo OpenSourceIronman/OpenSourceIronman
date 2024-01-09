@@ -98,10 +98,8 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 alias p3="python3"
 alias clr="clear"
 alias gits="git status"
@@ -111,8 +109,19 @@ alias nano="/opt/homebrew/bin/nano"
 alias themes="cd /Users/venus/.oh-my-zsh/themes"
 alias cmatrix="cmatrix -b -s"
 
-#/usr/bin/nano /opt/homebrew/share/man/man1/nano.1
+# Some ls file viewing setting
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors)"
+alias ls='ls $LS_OPTIONS -A'
+alias ll='ls $LS_OPTIONS -l'
+alias l='ls $LS_OPTIONS -lA'
 
+# Some more alias to avoid making mistakes:
+alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+
+#/usr/bin/nano /opt/homebrew/share/man/man1/nano.1
 
 # Herd injected PHP binary.
 export PATH="/Users/venus/Library/Application Support/Herd/bin/":$PATH
