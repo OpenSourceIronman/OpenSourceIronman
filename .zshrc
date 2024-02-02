@@ -98,30 +98,22 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias p3="python3"
 alias clr="clear"
 alias gits="git status"
 alias gita="git add *"
 alias gitc="git commit -m"
+alias gitdiff="git diff > diff.txt"
 alias nano="/opt/homebrew/bin/nano"
 alias themes="cd /Users/venus/.oh-my-zsh/themes"
 alias cmatrix="cmatrix -b -s"
 
-# Some ls file viewing setting
-export LS_OPTIONS='--color=auto'
-eval "$(dircolors)"
-alias ls='ls $LS_OPTIONS -A'
-alias ll='ls $LS_OPTIONS -l'
-alias l='ls $LS_OPTIONS -lA'
-
-# Some more alias to avoid making mistakes:
-alias rm='rm -i'
-# alias cp='cp -i'
-# alias mv='mv -i'
-
 #/usr/bin/nano /opt/homebrew/share/man/man1/nano.1
+
 
 # Herd injected PHP binary.
 export PATH="/Users/venus/Library/Application Support/Herd/bin/":$PATH
@@ -132,3 +124,20 @@ export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
 
 # Herd injected PHP 8.2 configuration.
 export HERD_PHP_82_INI_SCAN_DIR="/Users/venus/Library/Application Support/Herd/config/php/82/"
+export PATH=~/miniforge3/bin:$PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/venus/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/venus/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/Users/venus/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/venus/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
