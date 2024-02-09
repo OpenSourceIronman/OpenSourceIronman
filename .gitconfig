@@ -1,0 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = blaze.d.a.sanders@gmail.com
+	name = Blaze Sanders
+[core]
+	editor = nano
+	diff = nano
+[includeIf "gitdir:~/MoeBuild"]
+    path = .gitconfig-work
+[includeIf "gitdir:~/Personal"]
+    path = .gitconfig-personal
