@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="apple"
+#ZSH_THEME="apple"
 #ZSH_THEME="suvash"
 #ZSH_THEME="robbyrussell"
 
@@ -108,7 +108,8 @@ alias gits="git status"
 alias gita="git add *"
 alias gitc="git commit -m"
 alias gitdiff="git diff > diff.txt"
-alias nano="/opt/homebrew/bin/nano"
+alias nano="/opt/homebrew/bin/nano"   	# For MacOS
+# alias nano="/usr/bin/nano"  		# For Linux
 alias themes="cd /Users/venus/.oh-my-zsh/themes"
 alias cmatrix="cmatrix -b -s"
 
