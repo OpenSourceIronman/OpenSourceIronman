@@ -73,6 +73,8 @@ zstyle ':omz:update' frequency 14
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 plugins=(git Sudo web-search macos zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
