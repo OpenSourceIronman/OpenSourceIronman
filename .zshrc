@@ -1,6 +1,6 @@
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="apple"
+ZSH_THEME="apple"
 #ZSH_THEME="suvash"
 #ZSH_THEME="robbyrussell"
 
@@ -110,13 +110,13 @@ alias gits="git status"
 alias gita="git add *"
 alias gitc="git commit -m"
 alias gitdiff="git diff > diff.txt"
-alias nano="/opt/homebrew/bin/nano"   	# For MacOS
-# alias nano="/usr/bin/nano"  		# For Linux
+#alias nano="/opt/homebrew/bin/nano"   	# For MacOS
+alias nano="/usr/bin/nano"  		# For Linux and MacOS sometimes :)
 alias themes="cd /Users/venus/.oh-my-zsh/themes"
 alias cmatrix="cmatrix -b -s"
 
-#/usr/bin/nano /opt/homebrew/share/man/man1/nano.1
-
+# Howebrew package manager
+export PATH=/opt/homebrew/bin:$PATH
 
 # Herd injected PHP binary.
 export PATH="/Users/venus/Library/Application Support/Herd/bin/":$PATH
@@ -129,18 +129,4 @@ export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
 export HERD_PHP_82_INI_SCAN_DIR="/Users/venus/Library/Application Support/Herd/config/php/82/"
 export PATH=~/miniforge3/bin:$PATH
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/venus/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/venus/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/venus/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/venus/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
