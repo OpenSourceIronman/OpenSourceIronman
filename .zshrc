@@ -105,6 +105,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias p3="python3"
+alias p3s="python3 -m http.server 80"
 alias clr="clear"
 alias gits="git status"
 alias gita="git add *"
