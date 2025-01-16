@@ -1,0 +1,4 @@
+# In /etc/apt directory:
+deb http://deb.debian.org/debian/ bookworm main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm main contrib non-free
+#deb apt-cdrom:[Official Debian GNU/Linux Live 12.8.0 gnome 2024-11-09T10:10:58Z]/ bookworm main non-free-firmware
