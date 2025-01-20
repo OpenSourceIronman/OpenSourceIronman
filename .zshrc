@@ -113,7 +113,7 @@ alias gitc="git commit -m"
 alias gitdiff="git diff > diff.txt"
 #alias nano="/opt/homebrew/bin/nano"   	# For MacOS
 alias nano="/usr/bin/nano"  		# For Linux and MacOS sometimes :)
-alias themes="cd /Users/venus/.oh-my-zsh/themes"
+alias themes="cd /Users/$HOME/.oh-my-zsh/themes"
 alias cmatrix="cmatrix -b -s"
 
 # Howebrew package manager
