@@ -9,8 +9,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="apple"
-#ZSH_THEME="suvash"
+#ZSH_THEME="apple"
+ZSH_THEME="suvash"
 #ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
@@ -75,7 +75,7 @@ zstyle ':omz:update' frequency 14
 # Add wisely, as too many plugins slow down shell startup.
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 # source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-plugins=(git Sudo web-search macos zsh-autosuggestions)
+plugins=(git web-search macos zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
