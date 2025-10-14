@@ -112,23 +112,14 @@ alias gits="git status"
 alias gita="git add *"
 alias gitc="git commit -m"
 alias gitdiff="git diff > diff.txt"
+alias nano="/usr/bin/nano"  		    # For Linux
 #alias nano="/opt/homebrew/bin/nano"   	# For MacOS
-alias nano="/usr/bin/nano"  		# For Linux and MacOS sometimes :)
 alias themes="cd /Users/$HOME/.oh-my-zsh/themes"
 alias cmatrix="cmatrix -b -s"
 
 # Howebrew package manager
 export PATH=/opt/homebrew/bin:$PATH
 
-# Herd injected PHP binary.
-export PATH="/Users/venus/Library/Application Support/Herd/bin/":$PATH
-
 # Mojo (Python) SDK
 export MODULAR_HOME="$HOME/.modular"
 export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
-
-# Herd injected PHP 8.2 configuration.
-export HERD_PHP_82_INI_SCAN_DIR="/Users/venus/Library/Application Support/Herd/config/php/82/"
-export PATH=~/miniforge3/bin:$PATH
-
-
