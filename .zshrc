@@ -104,6 +104,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls="ls -lh"
 alias p3="python3"
 alias p3s="python3 -m http.server 80"
 alias clr="clear"
